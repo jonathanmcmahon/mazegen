@@ -1,0 +1,2 @@
+# mazegen
+Maze generator (Python)
