@@ -7,4 +7,4 @@ Usage:
 python mazegen.py <MAZESIZE>
 ```
 
-Maze size must be an odd integer.
+Maze size must be an odd integer. (I just like odd integers, that's all.)
