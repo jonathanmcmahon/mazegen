@@ -50,6 +50,10 @@ for i in range(0, n + 1, 2):
     m[:, i] = 1
     m[i, :] = 1
 
+# Create entrance / exit
+m[0:2,0:2] = 0
+m[n-2:n,n-2:n] = 0
+
 stack = []
 current = (n - 2, n - 2)  # start in bottom right corner
 m[current] = VISITED
@@ -75,5 +79,6 @@ m[m == -1] = 0
 # Display the maze
 print("Plotting maze...")
 plt.imshow(m, cmap=plt.cm.binary)
+plt.axis("off")
 plt.show()
 print("Plot maze completed.")
